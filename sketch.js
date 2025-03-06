@@ -1,4 +1,4 @@
-
+        
 var firebaseConfig = {
   apiKey: "AIzaSyDF_0fXUVHiauVr83vsVIqBMkoXjNzRKlY",
   authDomain: "san-valero-4b07e.firebaseapp.com",
@@ -626,6 +626,46 @@ function showMenu() {
       
       PartidaEncontrada = 1;
           
+    ref = database.ref("Juegos/SVPong/BallVXPlay2");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/BallVYPlay2");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/BallXPlay2");
+
+    ref.set(640);
+        
+    ref = database.ref("Juegos/SVPong/BallYPlay2");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/MaxTouchLocal2");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/Partida2");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/Player1PosPartida2");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/Player2PosPartida2");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/ScorePlayer1Game2");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/ScorePlayer2Game2");
+
+    ref.set(0);
+          
       PosJugador = Partida1 + 1;
       
      ref = database.ref('Juegos/SVPong/Partida1');
@@ -654,6 +694,46 @@ function showMenu() {
         
         PartidaEncontrada = 2;
         
+    ref = database.ref("Juegos/SVPong/BallVXPlay3");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/BallVYPlay3");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/BallXPlay3");
+
+    ref.set(640);
+        
+    ref = database.ref("Juegos/SVPong/BallYPlay3");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/MaxTouchLocal3");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/Partida3");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/Player1PosPartida3");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/Player2PosPartida3");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/ScorePlayer1Game3");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/ScorePlayer2Game3");
+
+    ref.set(0);
+        
         PosJugador = Partida2 + 1;
     
      ref = database.ref('Juegos/SVPong/Partida2');
@@ -681,6 +761,46 @@ function showMenu() {
       if (PartidaEncontrada == 0) {
         
         PartidaEncontrada = 3;
+        
+    ref = database.ref("Juegos/SVPong/BallVXPlay1");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/BallVYPlay1");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/BallXPlay1");
+
+    ref.set(640);
+        
+    ref = database.ref("Juegos/SVPong/BallYPlay1");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/MaxTouchLocal1");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/Partida1");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/Player1PosPartida1");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/Player2PosPartida1");
+
+    ref.set(360);
+        
+    ref = database.ref("Juegos/SVPong/ScorePlayer1Game1");
+
+    ref.set(0);
+        
+    ref = database.ref("Juegos/SVPong/ScorePlayer2Game1");
+
+    ref.set(0);
         
         PosJugador = Partida3 + 1;
     
