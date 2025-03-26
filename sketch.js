@@ -1,4 +1,5 @@
-        
+let started = false; // Variable de control
+
 var firebaseConfig = {
   apiKey: "AIzaSyDF_0fXUVHiauVr83vsVIqBMkoXjNzRKlY",
   authDomain: "san-valero-4b07e.firebaseapp.com",
@@ -364,6 +365,8 @@ function setup() {
 }
 
 function draw() {
+if (!started) return; // No ejecuta draw() hasta que el usuario haga clic
+        
   if (!mySound.isPlaying()) {
     mySound.loop();
     mySound.setVolume(1);
@@ -2257,4 +2260,11 @@ function PantallaConexion() {
         
     }
   
+}
+
+function mousePressed() {
+  if (!started) {
+    started = true; // Cambia el estado a iniciado
+    console.log("¡El usuario hizo clic! Iniciando...");
+  }
 }
